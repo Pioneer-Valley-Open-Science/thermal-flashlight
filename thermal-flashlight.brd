@@ -116,7 +116,7 @@
 <rectangle x1="22.606" y1="6.096" x2="23.368" y2="7.62" layer="43"/>
 <rectangle x1="9.398" y1="11.684" x2="10.414" y2="12.7" layer="43"/>
 <wire x1="40.386" y1="14.224" x2="44.196" y2="14.224" width="0.254" layer="26"/>
-<text x="42.164" y="2.794" size="1.016" layer="25" ratio="20" rot="R180">http://publiclab.org/wiki/thermal-flashlight</text>
+<text x="42.672" y="2.032" size="1.016" layer="25" ratio="20" rot="R180">http://publiclab.org/wiki/thermal-flashlight</text>
 <text x="36.322" y="38.1" size="0.635" layer="25" ratio="20" rot="R180">A1</text>
 <text x="39.116" y="38.1" size="0.635" layer="25" ratio="20" rot="R180">A0</text>
 <text x="41.656" y="38.1" size="0.635" layer="25" ratio="20" rot="R180">D6</text>
@@ -127,8 +127,8 @@
 <text x="41.402" y="30.988" size="0.635" layer="25" ratio="20" rot="R180">SCL</text>
 <text x="38.862" y="30.988" size="0.635" layer="25" ratio="20" rot="R180">VCC</text>
 <text x="34.036" y="33.274" size="0.635" layer="25" ratio="20" rot="R180">GND</text>
-<text x="45.212" y="41.656" size="1.6764" layer="25" ratio="20" rot="R180">THERMAL-FLASHLIGHT</text>
-<text x="17.018" y="41.656" size="1.016" layer="25" ratio="20" rot="R180">PUBLICLAB.org</text>
+<text x="44.958" y="42.164" size="1.6764" layer="25" ratio="20" rot="R180">THERMAL-FLASHLIGHT</text>
+<text x="16.764" y="41.91" size="1.016" layer="25" ratio="20" rot="R180">PUBLICLAB.org</text>
 <wire x1="49.53" y1="0" x2="0.254" y2="0" width="0" layer="20"/>
 <wire x1="0.254" y1="0" x2="-0.254" y2="0" width="0" layer="20"/>
 <wire x1="0.254" y1="42.926" x2="0.254" y2="0" width="0" layer="20"/>
