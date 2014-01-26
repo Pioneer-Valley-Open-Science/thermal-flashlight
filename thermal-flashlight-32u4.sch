@@ -11523,7 +11523,7 @@ W = angled&lt;p&gt;
 <part name="IC3" library="adaprog" deviceset="ATMEGA32U4" device="-AU"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="BTN1" library="adafruit" deviceset="EVQQ2" device="" value=""/>
+<part name="BTN" library="adafruit" deviceset="EVQQ2" device="" value=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="P+8" library="supply1" deviceset="VCC" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
@@ -11532,7 +11532,7 @@ W = angled&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="-21.844" y="3.302" size="5.08" layer="91" rot="R180">Thermistor</text>
+<text x="-30.226" y="-8.89" size="2.1844" layer="91" rot="R180">Thermistor</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="-39.116" y="37.084" rot="R180"/>
@@ -11619,7 +11619,7 @@ W = angled&lt;p&gt;
 <instance part="IC3" gate="G$1" x="42.672" y="13.97"/>
 <instance part="GND15" gate="1" x="85.852" y="39.37" rot="MR270"/>
 <instance part="GND16" gate="1" x="2.032" y="70.104"/>
-<instance part="BTN1" gate="G$1" x="7.112" y="75.184" rot="R270"/>
+<instance part="BTN" gate="G$1" x="7.112" y="75.184" rot="R270"/>
 <instance part="P+6" gate="VCC" x="7.112" y="46.99"/>
 <instance part="P+8" gate="VCC" x="7.112" y="23.876"/>
 <instance part="P+1" gate="VCC" x="143.51" y="53.086"/>
@@ -11734,8 +11734,8 @@ W = angled&lt;p&gt;
 <wire x1="2.032" y1="75.184" x2="2.032" y2="72.644" width="0.1524" layer="91"/>
 <junction x="2.032" y="72.644"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="BTN1" gate="G$1" pin="P1"/>
-<pinref part="BTN1" gate="G$1" pin="P"/>
+<pinref part="BTN" gate="G$1" pin="P1"/>
+<pinref part="BTN" gate="G$1" pin="P"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="1" pin="1"/>
@@ -12142,8 +12142,8 @@ W = angled&lt;p&gt;
 <pinref part="IC3" gate="G$1" pin="/RESET"/>
 <wire x1="12.192" y1="57.15" x2="12.192" y2="72.644" width="0.1524" layer="91"/>
 <junction x="12.192" y="57.15"/>
-<pinref part="BTN1" gate="G$1" pin="S"/>
-<pinref part="BTN1" gate="G$1" pin="S1"/>
+<pinref part="BTN" gate="G$1" pin="S"/>
+<pinref part="BTN" gate="G$1" pin="S1"/>
 <wire x1="12.192" y1="75.184" x2="12.192" y2="72.644" width="0.1524" layer="91"/>
 <junction x="12.192" y="72.644"/>
 </segment>
