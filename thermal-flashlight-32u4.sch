@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11528,6 +11528,9 @@ W = angled&lt;p&gt;
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="SV1" library="con-lstb" deviceset="MA03-2" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
+<part name="LED1" library="adafruit" deviceset="RGBLED" device="5050"/>
+<part name="RN2" library="resistor-dil" deviceset="4R-N" device="EXB38V"/>
+<part name="GND3" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11624,6 +11627,11 @@ W = angled&lt;p&gt;
 <instance part="P+1" gate="VCC" x="143.51" y="53.086"/>
 <instance part="SV1" gate="1" x="127.762" y="-13.97"/>
 <instance part="P+7" gate="VCC" x="-47.752" y="-18.288" rot="R90"/>
+<instance part="LED1" gate="G$1" x="185.42" y="30.48"/>
+<instance part="RN2" gate="A" x="175.26" y="35.56"/>
+<instance part="RN2" gate="B" x="175.26" y="30.48"/>
+<instance part="RN2" gate="C" x="175.26" y="25.4"/>
+<instance part="GND3" gate="1" x="190.5" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -11741,6 +11749,17 @@ W = angled&lt;p&gt;
 <pinref part="SV1" gate="1" pin="1"/>
 <wire x1="135.382" y1="-16.51" x2="137.668" y2="-16.51" width="0.1524" layer="91"/>
 <label x="137.922" y="-16.51" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$1" pin="BLUE_C"/>
+<pinref part="LED1" gate="G$1" pin="GREEN_C"/>
+<wire x1="190.5" y1="35.56" x2="190.5" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="RED_C"/>
+<wire x1="190.5" y1="30.48" x2="190.5" y2="25.4" width="0.1524" layer="91"/>
+<junction x="190.5" y="30.48"/>
+<wire x1="190.5" y1="25.4" x2="190.5" y2="17.78" width="0.1524" layer="91"/>
+<junction x="190.5" y="25.4"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -11940,6 +11959,11 @@ W = angled&lt;p&gt;
 <label x="70.612" y="8.89" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="PB1(SCK)"/>
 </segment>
+<segment>
+<wire x1="170.18" y1="35.56" x2="161.29" y2="35.56" width="0.1524" layer="91"/>
+<label x="161.29" y="35.56" size="1.778" layer="95"/>
+<pinref part="RN2" gate="A" pin="1"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -11956,6 +11980,11 @@ W = angled&lt;p&gt;
 <wire x1="68.072" y1="13.97" x2="78.232" y2="13.97" width="0.1524" layer="91"/>
 <label x="70.612" y="13.97" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="PB3(PDO/MISO)"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="30.48" x2="161.29" y2="30.48" width="0.1524" layer="91"/>
+<label x="161.29" y="30.48" size="1.778" layer="95"/>
+<pinref part="RN2" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -12018,6 +12047,11 @@ W = angled&lt;p&gt;
 <pinref part="IC3" gate="G$1" pin="PB4(ADC11)"/>
 <wire x1="68.072" y1="16.51" x2="73.914" y2="16.51" width="0.1524" layer="91"/>
 <label x="74.168" y="16.764" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="170.18" y1="25.4" x2="161.29" y2="25.4" width="0.1524" layer="91"/>
+<label x="161.29" y="25.4" size="1.778" layer="95"/>
+<pinref part="RN2" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -12271,6 +12305,24 @@ W = angled&lt;p&gt;
 <pinref part="IC3" gate="G$1" pin="PD4(ICP1/ADC8)"/>
 <wire x1="68.072" y1="-6.35" x2="71.628" y2="-6.35" width="0.1524" layer="91"/>
 <label x="71.882" y="-5.842" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="BLUE_A"/>
+<pinref part="RN2" gate="A" pin="2"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="GREEN_A"/>
+<pinref part="RN2" gate="B" pin="2"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="LED1" gate="G$1" pin="RED_A"/>
+<pinref part="RN2" gate="C" pin="2"/>
 </segment>
 </net>
 </nets>
