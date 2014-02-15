@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12075,11 +12075,6 @@ W = angled&lt;p&gt;
 <wire x1="68.072" y1="49.53" x2="70.866" y2="49.53" width="0.1524" layer="91"/>
 <label x="71.374" y="49.784" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="SV1" gate="1" pin="6"/>
-<wire x1="120.142" y1="-11.43" x2="117.856" y2="-11.43" width="0.1524" layer="91"/>
-<label x="113.792" y="-11.43" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="A3" class="0">
 <segment>
@@ -12087,11 +12082,6 @@ W = angled&lt;p&gt;
 <wire x1="68.072" y1="52.07" x2="70.866" y2="52.07" width="0.1524" layer="91"/>
 <wire x1="70.866" y1="52.07" x2="70.866" y2="52.324" width="0.1524" layer="91"/>
 <label x="71.12" y="52.578" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="1" pin="5"/>
-<wire x1="135.382" y1="-11.43" x2="137.668" y2="-11.43" width="0.1524" layer="91"/>
-<label x="138.176" y="-10.922" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D8" class="0">
@@ -12295,12 +12285,22 @@ W = angled&lt;p&gt;
 <label x="70.612" y="-8.89" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="PD3(INT3/TXD1)"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="1" pin="5"/>
+<wire x1="135.382" y1="-11.43" x2="137.668" y2="-11.43" width="0.1524" layer="91"/>
+<label x="138.176" y="-10.922" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D0/RX" class="0">
 <segment>
 <wire x1="68.072" y1="-11.43" x2="80.772" y2="-11.43" width="0.1524" layer="91"/>
 <label x="70.612" y="-11.43" size="1.778" layer="95"/>
 <pinref part="IC3" gate="G$1" pin="PD2(INT2/RXD1)"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="1" pin="6"/>
+<wire x1="120.142" y1="-11.43" x2="117.856" y2="-11.43" width="0.1524" layer="91"/>
+<label x="109.474" y="-11.43" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6*" class="0">
