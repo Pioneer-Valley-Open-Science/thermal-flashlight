@@ -139,8 +139,8 @@
 <text x="31.496" y="15.748" size="0.635" layer="25" font="vector" ratio="20" rot="R270">Q4</text>
 <text x="31.496" y="19.812" size="0.635" layer="25" font="vector" ratio="20" rot="R270">IC4</text>
 <text x="17.526" y="23.622" size="0.635" layer="25" font="vector" ratio="20" rot="R90">GND</text>
-<text x="22.352" y="22.352" size="0.635" layer="25" font="vector" ratio="20" rot="R180">VCC</text>
-<text x="24.892" y="22.352" size="0.635" layer="25" font="vector" ratio="20" rot="R180">TX</text>
+<text x="22.606" y="22.606" size="0.635" layer="25" font="vector" ratio="20" rot="R180">VCC</text>
+<text x="25.654" y="22.606" size="0.635" layer="25" font="vector" ratio="20" rot="R180">TX</text>
 <text x="24.13" y="28.702" size="0.635" layer="25" font="vector" ratio="20">RX</text>
 <text x="21.59" y="28.702" size="0.635" layer="25" font="vector" ratio="20">A1</text>
 <text x="18.796" y="28.702" size="0.635" layer="25" font="vector" ratio="20">A0</text>
